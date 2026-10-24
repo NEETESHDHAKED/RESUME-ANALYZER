@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Donor Detail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:Arial;background:#FFF5F5;color:#222;padding:15px}
+.card{background:white;padding:20px;border-radius:20px;margin:10px 0;box-shadow:0 5px 15px rgba(0,0,0,0.08);text-align:center}
+a{color:#E53935;text-decoration:none;font-weight:bold}
+.wa{background:#25D366;color:white;padding:15px;border-radius:12px;display:block;margin:10px 0;text-align:center}
+.call{background:#E53935;color:white;padding:15px;border-radius:12px;display:block;margin:10px 0;text-align:center}
+</style>
+</head>
+<body>
+<a href="/">⬅ BACK</a>
+<div class="card">
+<div style="background:#E53935;color:white;width:90px;height:90px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:28px;margin:0 auto">{{p.blood}}</div>
+<h1>{{p.name}}</h1>
+<p>📍 {{p.village}} | Age: {{p.age}}<br>Last Donate: {{p.last_donate}}</p>
+<p>📞 {{p.phone}}</p>
+<a href="tel:{{p.phone}}" class="call">📞 CALL KARO - ABHI</a>
+<a href="{{wa_link}}" target="_blank" class="wa">💬 WHATSAPP - KHOON MANGO</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Emergency</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{font-family:Arial;background:#FFF5F5;padding:15px} .card{background:white;padding:15px;border-radius:20px;margin:10px 0} a{color:#E53935;font-weight:bold}</style>
+</head>
+<body>
+<a href="/">⬅ BACK</a>
+<h1>🚨 {{group}} Chahiye - Emergency</h1>
+<p>{{same|length}} donor mile</p>
+{% for p in same %}
+<div class="card"><b>{{p.name}}</b> - {{p.village}} - {{p.phone}}<br><a href="tel:{{p.phone}}">📞 CALL KARO</a></div>
+{% else %}<p>Koi donor nahi mila is group ka - Add karo</p>{% endfor %}
+</body>
+</html>
